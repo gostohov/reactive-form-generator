@@ -11,7 +11,8 @@ export class AppComponent {
 
   constructor() {
     const user = new User();
-    user.formGroup.valueChanges.subscribe();
-    user.formGroup.controls.id.valueChanges.subscribe();
+    user.formGroup.valueChanges.subscribe(console.warn);
+    user.formGroup.controls.id.valueChanges.subscribe(console.warn);
+    user.id = 2;
   }
 }
