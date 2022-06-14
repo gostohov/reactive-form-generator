@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {User} from './model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'reactive-form-generator';
+
+  constructor() {
+    const user = new User();
+    user.formGroup.valueChanges.subscribe();
+    user.formGroup.controls.id.valueChanges.subscribe();
+  }
 }

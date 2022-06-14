@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "reactive-form-generator"
+    }
+  },
+  "defaultProject": "reactive-form-generator",
+  "cli": {
+    "analytics": false
+  }
 }
